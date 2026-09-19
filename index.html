@@ -1,31 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Milla Menezes | Nail Designer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Parisienne&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <a class="logo" href="#inicio">
-            <b>MM</b>
-            <span>
-                MILLA MENEZES
+        <a href="#inicio" class="logo">
+            <span>MM</span>
+            <div>
+                <strong>MILLA MENEZES</strong>
                 <small>NAIL DESIGNER</small>
-            </span>
+            </div>
         </a>
 
-        <button id="menu">☰</button>
+        <button id="menu" aria-label="Abrir menu">
+            ☰
+        </button>
 
         <nav>
             <a href="#inicio">Início</a>
@@ -36,200 +42,403 @@
         </nav>
     </header>
 
+
+    <!-- HERO -->
     <main>
 
-        <section class="hero" id="inicio">
-            <div class="copy">
-                <label>BELEZA • CUIDADO • AUTOESTIMA</label>
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    BELEZA • CUIDADO • AUTOESTIMA
+                </span>
 
                 <h1>
-                    Milla Menezes<br>
-                    <i>Nail Designer</i>
+                    Milla Menezes
+                    <span>Nail Designer</span>
                 </h1>
 
                 <p>
-                    Unhas bem feitas são mais do que estética. Cada detalhe é pensado para valorizar o seu estilo.
+                    Unhas feitas para valorizar o seu estilo,
+                    com cuidado, delicadeza e um acabamento
+                    pensado em cada detalhe.
                 </p>
 
-                <a class="btn" href="https://wa.me/5511949989900">
-                    ◉ Agendar pelo WhatsApp&nbsp; →
+                <a
+                    href="https://wa.me/5511949989900"
+                    target="_blank"
+                    class="button"
+                >
+                    Agendar pelo WhatsApp
                 </a>
 
                 <div class="trust">
-                    <span>
-                        ♡
-                        <small>Atendimento<br>personalizado</small>
-                    </span>
 
-                    <span>
-                        ✦
-                        <small>Higiene<br>e segurança</small>
-                    </span>
+                    <div>
+                        <strong>✓</strong>
+                        <span>Atendimento personalizado</span>
+                    </div>
 
-                    <span>
-                        ◇
-                        <small>Acabamento<br>impecável</small>
-                    </span>
+                    <div>
+                        <strong>✓</strong>
+                        <span>Higiene e segurança</span>
+                    </div>
+
+                    <div>
+                        <strong>✓</strong>
+                        <span>Acabamento impecável</span>
+                    </div>
+
                 </div>
+
             </div>
 
-            <div class="heroimg"></div>
+            <div class="hero-image">
+                <img
+                    src="assets/Unhas1.jpeg"
+                    alt="Trabalho de unhas realizado por Milla Menezes"
+                >
+            </div>
+
         </section>
 
-        <section class="services" id="servicos">
-            <div>
-                <label>NOSSOS</label>
-                <h2>Serviços</h2>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="services">
+
+            <div class="section-head">
+
+                <span class="eyebrow">
+                    SERVIÇOS
+                </span>
+
+                <h2>
+                    Cuidados que valorizam suas unhas
+                </h2>
 
                 <p>
-                    Cuidados pensados para deixar suas unhas bonitas, resistentes e com acabamento delicado.
+                    Técnicas e cuidados pensados para deixar
+                    suas unhas bonitas, bem cuidadas e do seu jeito.
                 </p>
-            </div>
-
-            <div class="cards">
-
-                <article>
-                    <b>♡</b>
-                    <h3>Unhas de Gel</h3>
-                    <p>Resistência, durabilidade e acabamento elegante.</p>
-                </article>
-
-                <article>
-                    <b>✧</b>
-                    <h3>Fibra de Vidro</h3>
-                    <p>Estrutura delicada e formato personalizado.</p>
-                </article>
-
-                <article>
-                    <b>✦</b>
-                    <h3>Nail Art</h3>
-                    <p>Do clássico ao criativo, feito para seu estilo.</p>
-                </article>
-
-                <article>
-                    <b>◇</b>
-                    <h3>Banho de Gel</h3>
-                    <p>Brilho e proteção para acompanhar sua rotina.</p>
-                </article>
 
             </div>
+
+            <div class="service-grid">
+
+                <article class="service-card">
+                    <span class="service-number">01</span>
+
+                    <h3>
+                        Unhas de Gel
+                    </h3>
+
+                    <p>
+                        Alongamento e acabamento em gel para unhas
+                        bonitas e duradouras.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">02</span>
+
+                    <h3>
+                        Unha no Molde F1
+                    </h3>
+
+                    <p>
+                        Alongamento com molde F1 para um formato
+                        elegante e personalizado.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">03</span>
+
+                    <h3>
+                        Fibra de Vidro
+                    </h3>
+
+                    <p>
+                        Alongamento com fibra de vidro para um
+                        resultado resistente e sofisticado.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">04</span>
+
+                    <h3>
+                        Banho de Gel
+                    </h3>
+
+                    <p>
+                        Camada de gel para proporcionar resistência
+                        e um acabamento impecável.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">05</span>
+
+                    <h3>
+                        Blindagem
+                    </h3>
+
+                    <p>
+                        Proteção das unhas naturais com uma camada
+                        resistente e delicada.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">06</span>
+
+                    <h3>
+                        Esmaltação em Gel
+                    </h3>
+
+                    <p>
+                        Cor e brilho duradouros para manter as unhas
+                        bonitas por mais tempo.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">07</span>
+
+                    <h3>
+                        Nail Art
+                    </h3>
+
+                    <p>
+                        Detalhes e decorações personalizados para
+                        deixar suas unhas únicas.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">08</span>
+
+                    <h3>
+                        Manicure
+                    </h3>
+
+                    <p>
+                        Cuidados completos para manter as mãos
+                        e unhas bem cuidadas.
+                    </p>
+                </article>
+
+
+                <article class="service-card">
+                    <span class="service-number">09</span>
+
+                    <h3>
+                        Pedicure
+                    </h3>
+
+                    <p>
+                        Cuidados para os pés e unhas, com atenção
+                        aos detalhes e acabamento.
+                    </p>
+                </article>
+
+            </div>
+
         </section>
 
-        <section class="gallery" id="galeria">
 
-            <div>
-                <label>TRABALHOS</label>
+        <!-- GALERIA -->
+        <section id="galeria" class="gallery">
 
-                <h2>Galeria</h2>
+            <div class="section-head">
+
+                <span class="eyebrow">
+                    GALERIA
+                </span>
+
+                <h2>
+                    Alguns trabalhos
+                </h2>
 
                 <p>
-                    Alguns resultados para você conhecer o estilo do trabalho.
+                    Confira alguns dos trabalhos realizados
+                    pela Milla Menezes.
                 </p>
 
-                <a class="outline" href="https://www.instagram.com/millamenezes_nails/">
-                    Ver mais no Instagram ↗
-                </a>
             </div>
 
             <div class="photos">
 
                 <img
-                    src="assets/Unhas2.jpeg">
+                    src="assets/Unhas2.jpeg"
+                    alt="Trabalho de nail design"
+                >
 
                 <img
-                    src="assets/Unhas3.jpeg">
+                    src="assets/Unhas3.jpeg"
+                    alt="Trabalho de nail design"
+                >
 
                 <img
-                    src="assets/Unhas4.jpeg">
+                    src="assets/Unhas4.jpeg"
+                    alt="Trabalho de nail design"
+                >
 
                 <img
-                    src="assets/Unhas6.jpg">
+                    src="assets/Unhas6.jpg"
+                    alt="Trabalho de nail design"
+                >
 
             </div>
+
+            <a
+                href="https://www.instagram.com/millamenezes_nails/"
+                target="_blank"
+                class="button secondary"
+            >
+                Ver mais no Instagram
+            </a>
+
         </section>
 
-        <section class="about" id="sobre">
 
-            <div class="aboutimg"></div>
+        <!-- SOBRE -->
+        <section id="sobre" class="about">
 
-            <div>
-                <label>SOBRE A MILLA</label>
+            <div class="about-image">
 
-                <h2>Seu momento de cuidado.</h2>
+                <img
+                    src="assets/Camila1.jpeg"
+                    alt="Milla Menezes"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <span class="eyebrow">
+                    SOBRE
+                </span>
+
+                <h2>
+                    Mais do que unhas,
+                    um momento para você.
+                </h2>
 
                 <p>
-                    Cada atendimento é pensado para que você se sinta confortável, bem cuidada e satisfeita com o
-                    resultado.
+                    Cada atendimento é pensado para proporcionar
+                    uma experiência cuidadosa, confortável e
+                    personalizada.
                 </p>
 
-                <div class="features">
+                <p>
+                    O objetivo é valorizar a beleza das suas unhas
+                    respeitando o seu estilo e buscando sempre um
+                    resultado bonito e bem acabado.
+                </p>
 
-                    <span>
-                        ♡
-                        <b>Experiência</b>
-                        <small>Dedicação em cada atendimento.</small>
-                    </span>
+                <div class="about-features">
 
-                    <span>
-                        ◇
-                        <b>Qualidade</b>
-                        <small>Materiais e técnicas selecionados.</small>
-                    </span>
+                    <div>
+                        <strong>01</strong>
+                        <span>Experiência</span>
+                    </div>
 
-                    <span>
-                        ✦
-                        <b>Atendimento</b>
-                        <small>Um espaço acolhedor.</small>
-                    </span>
+                    <div>
+                        <strong>02</strong>
+                        <span>Qualidade</span>
+                    </div>
 
-                    <span>
-                        ✧
-                        <b>Resultado</b>
-                        <small>Unhas feitas para você.</small>
-                    </span>
+                    <div>
+                        <strong>03</strong>
+                        <span>Atendimento</span>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>Resultado</span>
+                    </div>
 
                 </div>
+
             </div>
 
         </section>
 
-        <section class="cta" id="contato">
 
-            <p>
-                Vamos cuidar<br>
-                das suas unhas?
-            </p>
+        <!-- CONTATO -->
+        <section id="contato" class="cta">
 
             <div>
+
+                <span class="eyebrow">
+                    AGENDAMENTO
+                </span>
+
+                <h2>
+                    Vamos cuidar das suas unhas?
+                </h2>
+
                 <p>
-                    Agende seu horário e venha viver essa experiência com a Milla Menezes.
+                    Entre em contato pelo WhatsApp e
+                    agende seu horário.
                 </p>
 
-                <a class="btn" href="https://wa.me/5511949989900">
-                    ◉ Falar com a Milla no WhatsApp&nbsp; →
-                </a>
             </div>
 
-            <div class="sig">
-                MM<br>
-                <small>
-                    MILLA MENEZES<br>
-                    NAIL DESIGNER
-                </small>
-            </div>
+            <a
+                href="https://wa.me/5511949989900"
+                target="_blank"
+                class="button"
+            >
+                Falar pelo WhatsApp
+            </a>
 
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-        ◎ @millamenezes_nails
-        <span>⌖ São Paulo - SP</span>
-        <span>♡ Unhas que combinam com você</span>
+
+        <div class="footer-logo">
+            <strong>MILLA MENEZES</strong>
+            <span>NAIL DESIGNER</span>
+        </div>
+
+        <div class="footer-info">
+
+            <a
+                href="https://www.instagram.com/millamenezes_nails/"
+                target="_blank"
+            >
+                @millamenezes_nails
+            </a>
+
+            <span>
+                São Paulo - SP
+            </span>
+
+            <span>
+                Unhas que combinam com você
+            </span>
+
+        </div>
+
     </footer>
+
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
