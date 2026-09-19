@@ -528,6 +528,8 @@ section {
 
     font-size: clamp(2.5rem, 4vw, 4rem);
     line-height: 1;
+
+    font-weight: 600;
 }
 
 .about-content > p {
@@ -536,6 +538,8 @@ section {
     color: var(--muted);
 
     font-size: 0.9rem;
+
+    line-height: 1.7;
 }
 
 .about-features {
@@ -550,7 +554,9 @@ section {
 
 .about-features div {
     display: flex;
+
     align-items: center;
+
     gap: 12px;
 }
 
@@ -562,6 +568,7 @@ section {
 
 .about-features span {
     font-size: 0.8rem;
+
     font-weight: 500;
 }
 
