@@ -1,45 +1,24 @@
-const m = document.querySelector("#menu"), n = document.querySelector("nav");
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector("#navigation");
 
-m.onclick = () => n.classList.toggle("open");
+if (menuButton && navigation) {
+  const closeMenu = () => {
+    navigation.classList.remove("is-open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Abrir menu");
+  };
 
-// Animação das fotos da galeria
-const fotos = document.querySelectorAll(".photos img");
+  menuButton.addEventListener("click", () => {
+    const expanded = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!expanded));
+    menuButton.setAttribute("aria-label", expanded ? "Abrir menu" : "Fechar menu");
+    navigation.classList.toggle("is-open", !expanded);
+  });
 
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-if (reducedMotion.matches) {
-
-    // Se o usuário prefere menos movimento,
-    // as fotos aparecem imediatamente.
-    fotos.forEach((foto) => {
-        foto.classList.add("show");
-    });
-
-} else {
-
-    const observer = new IntersectionObserver((entries) => {
-
-        entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("show");
-
-                // Evita executar a animação novamente
-                observer.unobserve(entry.target);
-            }
-        });
-
-    }, {
-        threshold: 0.2
-    });
-
-    // Cada foto recebe um pequeno atraso,
-    // criando o efeito sequencial.
-    fotos.forEach((foto, index) => {
-
-        foto.style.transitionDelay = `${index * 0.15}s`;
-
-        observer.observe(foto);
-    });
+  navigation.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMenu));
+  document.addEventListener("keydown", event => { if (event.key === "Escape") closeMenu(); });
+  window.addEventListener("resize", () => { if (window.innerWidth > 700) closeMenu(); });
 }
+
+const year = document.querySelector("#year");
+if (year) year.textContent = new Date().getFullYear();
